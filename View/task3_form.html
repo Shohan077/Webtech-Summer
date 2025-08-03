@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donation Form</title>
+</head>
+<body>
+    <center>
+        <h2 style="Color: Red">Donation Form</h2>
+    </center>
+    
+
+    <form>
+        <table>
+            <tr>
+            <td><h3>Donor Information</h3></td>
+        </tr>
+            <tr>
+                <td>First Name</td> <td><input type="text" name="firstName" ></td>
+            </tr>
+            <tr>
+                <td>Last Name</td> <td><input type="text" name="lastName" ></td>
+            </tr>
+            
+            <tr>
+                <td>Address</td> <td><input type="text" name="address" ></td>
+            </tr>
+            <tr>
+                <td>City</td> <td><input type="text" name="city" ></td>
+            </tr>
+            <tr><td>State</td>
+                <td>
+                    <select name="state">
+                        <option value="">Select a State</option>
+                        <option>Rajshahi</option>
+                        <option>Dhaka</option>
+                        <option>Rangpur</option>
+                    </select>
+                </td>
+            </tr>
+
+            </tr>
+            <tr>
+                <td>Phone</td><td><input type="text" name="phone"></td>
+            </tr>
+
+            <tr>
+                <td>Email</td> <td><input type="email" name="Email" ></td>
+            </tr>
+
+            <tr>
+                <td>Password</td> <td><input type="password" name="Password" ></td>
+            </tr>
+
+            <tr>
+                <td>Confirm Password</td> <td><input type="password" name="Confirm Password" ></td>
+            </tr>
+
+            <tr>
+                <td><h3>Donation Amount</h3></td>
+            </tr>
+            <tr>
+                <td>
+                <input type="radio" name="amount" value="150"> $150
+                <input type="radio" name="amount" value="200"> $200
+                <input type="radio" name="amount" value="250"> $250
+                <input type="radio" name="amount" value="other"> Other
+            </td>
+        </tr>
+            <tr><td>Other Amount</td><td><input type="text" name="otherAmount" placeholder="Other amount"></td></tr>
+            <tr><td>
+                <label><input type="checkbox" name="monthly"> I am interested in giving on a regular basis.</label>
+        </td></tr>
+    
+
+
+            <tr><td><h3>Additional Information</h3></td></tr>
+            <tr><td><input type="checkbox" name="gift"></td><td>I would like my gift to remain anonymouse.</td></tr>
+            <tr><td><input type="checkbox" name="matchingGift"></td><td>My employer offers a matching gift program.</td></tr>
+            <tr><td><input type="checkbox" name="noThankYou"></td><td>Please don't send a thank you later.</td></tr>
+           
+            <tr><td>Comment:</td><td><textarea name="comments"></textarea></td></tr>
+
+           
+        </table>
+
+        <button type="submit" name="submit-btn">Submit</button>
+         <button type="reset" name="reset-btn">Reset</button>
+    </form>
+   <scrip src="../JS/task3_valid.js"></script>
+</body>
+</html>
